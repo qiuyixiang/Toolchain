@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # MIT License
 #
 # Copyright (c) 2024 QIUYIXIANG
@@ -22,9 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# This File is the Main Entry for Gitlet
+# Configuration for Gitlet
 
-from lib import gitlet_lib
-
-if __name__ == "__main__":
-    gitlet_lib.main()
+VERSION_NUMBER = "0.0.1"

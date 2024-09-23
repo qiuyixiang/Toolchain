@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # MIT License
 #
 # Copyright (c) 2024 QIUYIXIANG
@@ -22,9 +20,33 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# This File is the Main Entry for Gitlet
 
-from lib import gitlet_lib
+# Git let Core Code
 
-if __name__ == "__main__":
-    gitlet_lib.main()
+# Here list all dependent components, In order for compatible for
+# further change, and some implemented API for C/C++ Program
+import argparse
+import datetime
+import collections
+import configparser
+import grp
+import pwd
+import fnmatch
+import hashlib
+import os
+import zlib
+import sys
+import re
+from math import ceil
+from lib import config
+
+
+
+def main(argv=sys.argv[1:]) -> None:
+    # Initialized and parse the command line argument
+    arg_parser = argparse.ArgumentParser(prog=f"Gitlet Version {config.VERSION_NUMBER}",
+        description="A lightweight tool for git-like version control system.")
+
+
+
+
